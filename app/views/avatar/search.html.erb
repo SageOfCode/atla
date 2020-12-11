@@ -1,0 +1,6 @@
+<h2><%= @characters.count %> Results:</h2>
+
+<% @characters.each do |character| %>
+  <h3>Name: <%= link_to "#{character.name}", "/avatar/#{character.id}" %></h3>
+  <p>Affiliation: <%= character.affiliation %></p>
+<% end %>

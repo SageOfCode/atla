@@ -1,0 +1,10 @@
+<h1>Welcome to the Avatar Search App</h1>
+
+<p>Please get started by searching for a character from Avatar The Last Airbender:</p>
+
+<%= form_tag '/search', method: :get do %>
+  <div>
+    <%= text_field_tag :character %>
+    <%= submit_tag "Search" %>
+  </div>
+<% end %>
